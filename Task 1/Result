@@ -1,0 +1,4 @@
+Conclusion:
+A hybrid approach may be best. Use MongoDB (or similar NoSQL DB) for storing user profiles and posts, and Neo4j or Amazon Neptune for managing user connections.
+
+This architecture ensures high read speed, flexibility, and scalability for a social platform with complex user interactions.
