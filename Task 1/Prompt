@@ -1,0 +1,41 @@
+Q: You are selecting a database for a new application. You have the following requirements:
+
+Social platform with millions of users
+
+Need to store profiles, posts, and connections between users
+
+High data read speed required
+
+Expected 80% read operations, 20% write operations
+
+Scalability is important as the user base grows
+
+A: Let’s think step by step.
+
+User scale and data structure:
+
+Millions of users indicate a need for a database that scales well horizontally.
+
+The data includes user profiles (structured), posts (semi-structured or unstructured), and user connections (graph-like relationships).
+
+Read-heavy workload (80% reads):
+
+Read optimization is important. This rules out some databases that are more write-optimized.
+
+Caching may be used, but the base database must support fast read performance.
+
+Connections between users:
+
+This is a strong indicator for needing graph capabilities (e.g., friends, followers, likes).
+
+Traditional relational databases can handle this, but not as efficiently at scale.
+
+Scalability:
+
+A distributed database architecture is preferred, such as NoSQL databases or graph databases that support sharding and partitioning.
+
+Putting it all together:
+
+For profiles and posts: a document-based NoSQL database like MongoDB could work well due to flexible schema and horizontal scalability.
+
+For user connections: a graph database like Neo4j or Amazon Neptune would be optimal for querying relationships quickly.
