@@ -1,0 +1,8 @@
+Turn text "Logout button doesn’t work on Safari. It just doesn’t respond" into a good bug ticket description that follows below format:
+
+Title
+Description
+Steps to Reproduce
+Expected vs Actual Behavior
+Environment (if known)
+Severity or Impact
